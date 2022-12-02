@@ -298,6 +298,11 @@
 }
 
 .drawings form {
+  width: 100%;
+  margin: auto;
+}
+
+.drawings form .form-block {
   width: calc(100% - 30px);
   margin: auto;
   margin-bottom: 20px;
@@ -501,6 +506,21 @@
   right: -25px;
 }
 
+.drawing .share {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.drawing .share a {
+  width: 20px;
+  height: 20px;
+}
+
+.drawing .share a img {
+  width: 100%;
+}
+
 .drawing .social-block {
   display: flex;
   -moz-column-gap: 40px;
@@ -658,10 +678,15 @@
 }
 
 form {
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+form .form-block {
   width: calc(100% - 30px);
   margin: auto;
   margin-bottom: 20px;
-  padding-top: 20px;
 }
 
 form input {
@@ -914,10 +939,6 @@ input[type=range]::-webkit-slider-thumb {
     padding-bottom: 280px;
   }
 
-  .competition .wrapper-1300 p {
-    max-width: 100%;
-  }
-
   .drawings__title .sponsors {
     display: none;
   }
@@ -971,7 +992,6 @@ input[type=range]::-webkit-slider-thumb {
   }
 
   .button {
-    margin: auto;
     margin-top: 60px;
     height: 50px;
   }
@@ -1062,6 +1082,14 @@ input[type=range]::-webkit-slider-thumb {
   .drawing .social-block {
     flex-direction: column;
     row-gap: 10px;
+  }
+
+  .drawing .share {
+    align-items: center;
+  }
+
+  .drawing .share span {
+    font-size: 10px;
   }
 
   .drawing .rating {

@@ -6,9 +6,10 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap&_v=20221201134709" rel="stylesheet">
- <link rel="stylesheet" href="css/style.min.css?_v=20221201134709">
- <title>Главная</title>
+ <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap&_v=20221202100835" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.min.css?_v=20221202100835">
+ <script src="./js/jQuery2.2.0.js?_v=20221202100835"></script>
+ <title>Галерея</title>
 </head>
 <body>
 <header class="header">
@@ -121,17 +122,18 @@
    </div>
    <aside class="drawings__filter">
     <span class="filter-title">Настроить фильтр</span>
-    <form action="">
+    <form action="" method="get" id="form">
+    <div class="form-block">
      <span>Субъект РФ</span>
      <div class="region-list">
       <div class="inner-box"></div>
      </div>
-    </form>
-    <form action="" >
+    </div>
+    <div class="form-block">
      <span>Город</span>
      <p><input type="text" placeholder="Введите город" class="town"></p>
-    </form>
-    <form action="">
+    </div>
+    <div class="form-block">
      <span>Рейтинг рисунка</span>
      <div class="stars 5-stars">
       <img src="img/star.svg" alt="">
@@ -158,8 +160,8 @@
      <div class="stars 1-stars">
       <img src="img/star.svg" alt="">
      </div>
-    </form>
-    <form action="">
+    </div>
+    <div class="form-block">
      <span>Возраст художника</span>
      <p><input type="range" id="age" min="4" max="15"></p>
      <div class="age-line">
@@ -176,24 +178,26 @@
       <span>14</span>
       <span>15</span>
      </div>
+    </div>
+    <input type="submit" value="ПРИМЕНИТЬ ФИЛЬТР" class="submit" disabled>
     </form>
-    <button class="submit">ПРИМЕНИТЬ ФИЛЬТР</button>
    </aside>
   </div>
  </div>
 </div>
  <div class="mobile-filter">
- <form action="">
+ <form action="" method="get" id="form-2">
+ <div class="form-block">
   <span>Субъект РФ</span>
   <div class="region-list">
    <div class="inner-box-mobile"></div>
   </div>
- </form>
- <form action="">
+ </div>
+ <div class="form-block">
   <span>Город</span>
   <p><input type="text" placeholder="Введите город" class="town"></p>
- </form>
- <form action="">
+ </div>
+ <div class="form-block">
   <span>Рейтинг рисунка</span>
   <div class="stars 5-stars">
    <img src="img/star.svg" alt="">
@@ -220,8 +224,8 @@
   <div class="stars 1-stars">
    <img src="img/star.svg" alt="">
   </div>
- </form>
- <form action="">
+ </div>
+ <div class="form-block">
   <span>Возраст художника</span>
   <p><input type="range" id="age" min="4" max="15"></p>
   <div class="age-line">
@@ -238,8 +242,9 @@
    <span>14</span>
    <span>15</span>
   </div>
+ </div>
+ <input type="submit" value="ПРИМЕНИТЬ ФИЛЬТР" class="submit-2" disabled>
  </form>
- <button class="submit-2">ПРИМЕНИТЬ ФИЛЬТР</button>
 </div>
 </main>
 <footer class="footer">
@@ -264,7 +269,7 @@
   </div>
  </div>
 </footer>
-<script src="./js/index.js?_v=20221201134709"></script>
-<script src="./js/burger.js?_v=20221201134709"></script>
+<script src="./js/index.js?_v=20221202100835"></script>
+<script src="./js/burger.js?_v=20221202100835"></script>
 </body>
 </html>
