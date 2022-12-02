@@ -1013,11 +1013,7 @@ input[type=range]::-webkit-slider-thumb {
 
 @media screen and (max-width: 700px) {
   .competition {
-    background-size: 105%;
-  }
-
-  .competition .wrapper-1300 span {
-    margin: 28px 0 30px 0;
+    background-size: 100%;
   }
 
   .competition .wrapper-1300 P:nth-child(1) {
